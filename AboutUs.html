@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tulips & Trinkets - About us</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/flexbox.css" />
+        <link rel="stylesheet" type="text/css" href="css/aboutus.css" />
+        <link rel="stylesheet" type="text/css" href="css/footer.css" />
+        <link rel="stylesheet" type="text/css" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <script type="text/javascript" src="javascript/contactValidation.js"></script>
+    </head>
+    <body>
+        <header id="myHeader" class="header">
+            <div id="navbar">
+                <a href="index.html" id="logo">Tulips & Trinkets</a>
+                <a href="index.html">Home</a>
+                <a href="index.html#shop">Shop</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="faq.html">FAQ</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </header>        
+        <div id="left"></div>
+        <div id="right"></div>
+        <div id="bottom"></div>
+        <div class="website">
+            <h1>Tulips & Trinkets Co. &copy;</h1>
+            <p>Tulips & Trinkets was started in 2016 when two engineers decided to come together and create a solution that would help bring smiles on millions of faces.Tulips & Trinkets having pioneered the concept of flowers and gifts in the country, today has become a driver of marketplace innovation and a contributor in local economies. 
+                The journey of T&T, much like the flowers which are at the very heart of its business, has been an organic one. 
+                Started with a single store in Bangalore. The brand has established a new edge to the flower gifting culture in the country. 
+                Today, T&T has grown with the core emphasis across portfolios on customer delight and constant aspiration to deliver exclusivity. 
+                We lead the floral and gifting industry with 320 outlets in 120 cities, pan India. 
+                T&T continues foraying into small towns and every nook and corner of the country to mark its presence.
+                <figure>
+                    <img src="images/flowershop.jpg"/>
+                    <figcaption>Our first store: Richmond Town, Bangalore.</figcaption>
+                </figure>
+            </p>
+            <p>T&T has consistently been awarded for its creative spirit and service, as mentioned below:
+                <ul>
+                    <li>In 2017, Vilasa wins ‘Exquisitely Designed Wedding Venue Award’ at the Ravishing Design Awards.</li>
+                    <li> In 2017, The Ritz bags Silver in Best Venue Category presented by EEMA.</li>
+                    <li>In 2018, Wedding Design Hub wins Gold in ‘Best Production House (Weddings)’ Category at Spotlight Awards.</li>
+                    <li> In 2019, Tulips & Trinkets has been ranked amongst the Top 100 Franchise Opportunities for the year 2019.</li>
+                </ul>
+            </p>             
+            <p>Tulips & Trinkets &copy; passionately strives to be the largest premium gifting leader with flowers, gifts,
+            cakes and weddings being the core verticals driven by people first approach and innovation in all spheres of business.</p>     
+        </div>
+        <div class="space"></div>
+        <h1>Meet Our Team</h1>
+        <div class="team-area">
+                <div class="single-team">
+                    <img src="images/karishma.jpg" alt="Team Member Karishma"/>
+                    <div class="team-text">
+                        <h2>Karishma Hegde</h2>
+                        <p>Computer Science Engineering Student</p>
+                        <p>
+                            <a href="https://www.facebook.com/karishma.hegde" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/karishma-hegde/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="#https://www.instagram.com/kari.miracle/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="single-team">
+                        <img src="images/pooja.jpg" alt="Team Member Pooja"/>
+                        <div class="team-text">
+                            <h2>Pooja Prasad</h2>
+                            <p>Computer Science Engineering Student</p>
+                            <p>
+                                <a href="https://www.facebook.com/pooja.prasad.1272010?ref=bookmarks"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/pooja._.prasad/"><i class="fa fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/pooja-prasad-368367186"><i class="fa fa-linkedin"></i></a>
+                            </p>
+                            <p></p>
+                        </div>
+                    </div>
+        </div>
+        <footer class="footer">
+                <div class="left-footer">
+                  <img src="images/icon.png"/>
+                  <div style="float:right; margin-top: 5px; font-family: 'Now Alt Light',Calibri; color: white; text-align: left;">
+                    <h4 style="margin:15px;">Head Office:</h4>
+                    <p style="margin:15px;">5th Street, 18th Cross,<br/>90, Richmond Town, Bangalore, India</p>
+                    <h4 style="margin:15px;">Check us Out:</h4>
+                    <p style="margin:15px;"> 
+                      <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                      <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                      <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </p>
+                    <i class="fa fa-phone"></i>
+                    : +91 8310728758
+                  </div>  
+                  <div class="vl"></div>
+                  <p>Tulips & Trinkets Co.</p>                 
+                </div>
+                <div class="right-footer" id="contact">
+                <form name='contact' id='contact' onSubmit="return contactValidation();" method="POST" action="send-mail.php">
+                    <fieldset>
+                        <legend><h4 style="margin: 5px;">Contact Us</h4></legend>
+                        <input type="text" placeholder="Name" name="name" id="name" style="width: 70%; margin-bottom: 10px;" />
+                        <input type="text" placeholder="Email Id (required)" name="email" id="email" style="width: 70%; margin-bottom: 10px;" />
+                        <input type="text" placeholder="Phone" name="phone" id="phone" style="width: 70%; margin-bottom: 10px;" />
+                        <textarea name="feedback" placeholder="How can we help?" rows="4" style="width: 70%"></textarea><br/>
+                        <input class="button" type="Submit" name="submit">
+                    </fieldset>
+                </form>
+            </div>
+        </footer>       
+    </body>
+</html>

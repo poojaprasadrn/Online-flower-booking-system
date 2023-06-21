@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tulips & Trinkets - FAQ</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/flexbox.css" />
+        <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/footer.css" />
+        <link rel="stylesheet" type="text/css" href="css/faq.css" />
+        <link rel="stylesheet" type="text/css" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>        
+        <script type="text/javascript" src="engine1/jquery.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="myHeader" class="header">
+                <div id="navbar">
+                    <a href="index.html" id="logo">Tulips & Trinkets</a>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#shop">Shop</a>
+                    <a href="AboutUs.html">About Us</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="#contact">Contact</a>                   
+                </div>
+            </header>        
+            <div id="left"></div>
+            <div id="right"></div>
+            <div id="bottom"></div>
+            <div class="faq-container">
+                <h1>FAQs</h1>
+                <div class="space"></div>
+                <h1 class="sub-heading">Orders</h1>
+                <ol>
+                    <li><h3>Can I cancel my order?</h3>
+                    <p> Any cancellations to the order shall be made before 48 hours of the actual time of delivery to claim refund of the paid amount.</p>
+                    <p>In case of Courier Products cancellation is not possible if the product is dispatched.</p>
+                    <p>Personalised Products once placed can not be cancelled.</p></li>
+                    <li><h3>Can I get a refund?</h3>  
+                        <p>Refund shall be made under following conditions:</p>
+                        <ul>
+                            <li>he 48hr delivery window has not started.</li>
+                            <li>Order was not delivered to the recipient.( This does not include the case for unfounded recipient )</li>
+                            <li>If there is any complain regarding the quality of the product being delivered, we will inquire about
+                                the same and if it is<p> found to be true, the customer will get a full refund or the product will be replaced.</p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>In case of Cancellation, will I get a full refund?</h3>
+                        <p>In case of Cancellation, 5% charge will be applicable.</p>
+                    </li>
+                    <li>
+                        <h3>When will my order be delivered?</h3>
+                        <p>You can choose any one of our delivery schemes:</p>
+                        <ul>
+                            <li>Standard Delivery (Free).</li>
+                            <li>Guaranteed 48 hour delivery (Rs. 100).</li>
+                            <li>Same day delivery within 3 hours. (Rs. 500).</li>
+                            <p><b>Note: This option is not applicable after 10 PM.</b></p>
+                        </ul>
+                    </li>
+                </ol>
+                <h1 class="sub-heading">Account</h1>  
+                <ol>
+                        <li><h3>I forgot my password!?</h3>
+                        <p> You can reset your password <a href="" style="text-decoration: none;">here.</a></p>
+                        </li>
+                        <li><h3>I forgot my id and password!!?</h3>  
+                            <p>No worries, you can recover your account <a href="" style="text-decoration: none;">here.</a></p>
+                        </li>
+                        <li>
+                            <h3>Where do I edit my account details?</h3>
+                            <p>Account details cannot be changed.</p>
+                        </li>
+                    </ol> 
+            </div>
+        </div>
+            <footer class="footer">
+                <div class="left-footer">
+                    <img src="images/icon.png"/>
+                    <div style="float:right; margin-top: 5px; font-family: 'Now Alt Light',Calibri; color: white; text-align: left;">
+                    <h4 style="margin:15px;">Head Office:</h4>
+                    <p style="margin:15px;">5th Street, 18th Cross,<br/>90, Richmond Town, Bangalore, India</p>
+                    <h4 style="margin:15px;">Check us Out:</h4>
+                    <p style="margin:15px;"> 
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </p>
+                    <i class="fa fa-phone"></i>
+                    : +91 8310728758
+                    </div>  
+                    <div class="vl"></div>
+                    <p>Tulips & Trinkets Co.</p>                 
+                    </div>
+                    <div class="right-footer" id="contact">
+                        <form name='contact' id='contact' onSubmit="return contactValidation();" method="POST" action="send-mail.php">
+                            <fieldset>
+                                <legend><h4 style="margin: 5px;">Contact Us</h4></legend>
+                                <input type="text" placeholder="Name" name="name" id="name" style="width: 70%; margin-bottom: 10px;" />
+                                <input type="text" placeholder="Email Id (required)" name="email" id="email" style="width: 70%; margin-bottom: 10px;" />
+                                <input type="text" placeholder="Phone" name="phone" id="phone" style="width: 70%; margin-bottom: 10px;" />
+                                <textarea name="feedback" placeholder="How can we help?" rows="4" style="width: 70%"></textarea><br/>
+                                <input class="button" type="Submit" name="submit">
+                            </fieldset>
+                        </form>
+                    </div>            
+            </footer>  
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Tulips & Trinkets</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/flexbox.css" />
+        <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/footer.css" />
+        <link rel="stylesheet" type="text/css" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>        
+        <script type="text/javascript" src="engine1/jquery.js"></script>
+        <script type="text/javascript" src="javascript/contactValidation.js"></script>
+    </head>
+    <body>
+      <div class="wrapper">
+          <header id="myHeader" class="header">
+              <div id="navbar">
+                <a href="index.html" id="logo">Tulips & Trinkets</a>
+                  <a href="#shop">Shop</a>
+                  <a href="AboutUs.html">About Us</a>
+                  <a href="faq.html">FAQ</a>
+                  <a href="#contact">Contact</a>            
+          </header>        
+            <div id="left"></div>
+            <div id="right"></div>
+            <div id="bottom"></div>
+            <!--Sldier-->
+            <div id="wowslider-container1">
+              <div class="ws_images">
+                <ul>
+                  <li><img src="data1/images/header0.png" alt="header0" title="header0" id="wows1_0"/></li>
+                  <li><img src="data1/images/header1.png" alt="header1" title="header1" id="wows1_1"/></li>
+                  <li><a href="http://wowslider.net"><img src="data1/images/header2.png" alt="bootstrap slider" title="header2" id="wows1_2"/></a></li>
+                  <li><img src="data1/images/header3.png" alt="header3" title="header3" id="wows1_3"/></li>
+                </ul>
+              </div>
+              <div class="ws_bullets">
+                <div>
+                  <a href="#" title="header0"><span><img src="data1/tooltips/header0.png" alt="header0"/>1</span></a>
+                  <a href="#" title="header1"><span><img src="data1/tooltips/header1.png" alt="header1"/>2</span></a>
+                  <a href="#" title="header2"><span><img src="data1/tooltips/header2.png" alt="header2"/>3</span></a>
+                  <a href="#" title="header3"><span><img src="data1/tooltips/header3.png" alt="header3"/>4</span></a>
+                </div>
+              </div>
+              <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">html slider</a> by WOWSlider.com v8.8</div>
+              <div class="ws_shadow"></div>
+              </div>	
+              <script type="text/javascript" src="engine1/wowslider.js"></script>
+              <script type="text/javascript" src="engine1/script.js"></script>
+              <!-- End of slider -->
+              <br/>
+              <h1 style="font-family: 'Now Alt Light',Calibri; margin: 15px;" id="shop" >Shop</h1>
+              <div class="container">            
+                  <div class="single-team"> 
+                    <img class="buy" src="images/buy_bouquet.jpg"/>
+                    <div class="team-text">
+                      <h2>Bouquets & Flowers</h2>
+                      <h4><a href="shop.php">Shop Now</a></h4>
+                    </div>
+                  </div>
+                      <div class="single-team">
+                    <img class="buy" src="images/buy_cake.jpg"/>
+                    <div class="team-text">
+                      <h2>Cakes & Sweets</h2>
+                      <h4><a href="shop.php">Shop Now</a></h4>
+                    </div>
+                      </div>
+                  <div class="single-team">
+                    <img class="buy" src="images/buy_gifts.jpg"/>
+                      <div class="team-text">
+                        <h2>Gifts</h2>
+                          <h4><a href="shop.php">Shop Now</a></h4>
+                      </div>           
+                  </div>
+              </div>
+      </div>
+      <footer class="footer">
+        <div class="left-footer">
+          <img src="images/icon.png"/>
+          <div style="float:right; margin-top: 5px; font-family: 'Now Alt Light',Calibri; color: white; text-align: left;">
+            <h4 style="margin:15px;">Head Office:</h4>
+            <p style="margin:15px;">5th Street, 18th Cross,<br/>90, Richmond Town, Bangalore, India</p>
+            <h4 style="margin:15px;">Check us Out:</h4>
+            <p style="margin:15px;"> 
+              <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+            </p>
+            <i class="fa fa-phone"></i>
+            : +91 8310728758 <br/><br/>
+            <a href="adminlogin.html" style="text-decoration: none; color: white;">Admin Login</a>
+          </div>  
+          <div class="vl"></div>
+          <p>Tulips & Trinkets Co.</p>                 
+        </div>
+        <div class="right-footer" id="contact">
+          <form name='contact' id='contact' onSubmit="return contactValidation();" method="POST" action="send-mail.php">
+            <fieldset>
+                <legend><h4 style="margin: 5px;">Contact Us</h4></legend>
+                <input type="text" placeholder="Name" name="name" id="name" style="width: 70%; margin-bottom: 10px;" />
+                <input type="text" placeholder="Email Id (required)" name="email" id="email" style="width: 70%; margin-bottom: 10px;" />
+                <input type="text" placeholder="Phone" name="phone" id="phone" style="width: 70%; margin-bottom: 10px;" />
+                <textarea name="feedback" placeholder="How can we help?" rows="4" style="width: 70%"></textarea><br/>
+                <input class="button" type="Submit" name="submit">
+            </fieldset>
+          </form>
+        </div>
+        <p class="right-footer" style="clear: both;">Admin Login</p>
+      </footer>        
+    </body>
+</html>

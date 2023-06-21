@@ -1,0 +1,27 @@
+<div id="app">
+    <select id="mySelect">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+    
+     <button type="submit" id="mySubmit" disabled>Submit</button>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+  $('#mySelect').val("0");
+  
+  $('#mySelect').change(function () {
+    selectVal = $('#mySelect').val();
+   
+    if (selectVal == 0) {
+       $('#mySubmit').prop("disabled", true);
+    }
+    else {
+      $('#mySubmit').prop("disabled", false);
+    }
+  })
+  
+});
+</script>
